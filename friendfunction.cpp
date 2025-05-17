@@ -88,4 +88,17 @@ public:
 
     friend void lihatGajiStaff(Staff *s);
 
+    void lihatGajiDosen(Dosen *d)
+    {
+        cout << "Gaji Dosen " << d->nama << ": Rp " << d->gaji << endl;
+    }
+
+    void lihatGajiStaff(Staff *s)
+    {
+        cout << "Gaji Staff " << s->nama << ": Rp " << s->gaji << endl;
+    }
+};
+
+    
+
     
