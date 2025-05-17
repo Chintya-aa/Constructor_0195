@@ -22,3 +22,17 @@ public:
     // Access value using friend function
     friend void beriNilai(Mahasiswa& m, float nilai);
 };
+
+class Dosen 
+{
+private:
+    string nama;
+    string NIDN;
+    string pangkat;
+    float gaji;
+
+public:
+    Dosen(string n, string id, string p, float g) : nama(n), NIDN(id), pangkat(p), gaji(g) {}
+    friend void beriNilai(Mahasiswa& m, float nilai);
+    friend void ubahPangkat(Dosen* d, string pangkatBaru);
+};
