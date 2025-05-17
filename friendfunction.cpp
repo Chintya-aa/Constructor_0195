@@ -41,5 +41,18 @@ public:
         this->pangkat = pangkat;
         this->gaji = gaji;
     }
+
+    void beriNilai(Mahasiswa* m, float nilai) 
+    {
+        m->nilai = nilai; 
+    }
+    
+    void tampilInfo() 
+    {
+        cout << "Dosen: " << nama << " (NIDN: " << NIDN << "), Pangkat: " << pangkat << ", Gaji: " << gaji << endl;
+    }
+    
+    friend class Staff;
+    friend void lihatGajiDosen(Dosen* d);
 };
 
