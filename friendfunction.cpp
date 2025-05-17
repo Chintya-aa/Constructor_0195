@@ -103,11 +103,13 @@ private:
     string nama;
     
 public:
-    Universitas(string nama) {
+    Universitas(string nama) 
+    {
         this->nama = nama;
     }
     
-    void tampilkanGaji(Dosen* d, Staff* s) {
+    void tampilkanGaji(Dosen* d, Staff* s) 
+    {
         cout << "=== Informasi Gaji di " << nama << " ===" << endl;
         lihatGajiDosen(d);
         lihatGajiStaff(s);
