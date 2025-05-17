@@ -56,3 +56,18 @@ public:
     friend void lihatGajiDosen(Dosen* d);
 };
 
+class Staff {
+private:
+    string nama;
+    string id;
+    float gaji;
+    
+public:
+    Staff(string nama, string id, float gaji) {
+        this->nama = nama;
+        this->id = id;
+        this->gaji = gaji;
+    }
+    
+    
+
