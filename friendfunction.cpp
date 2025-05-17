@@ -69,5 +69,13 @@ public:
         this->gaji = gaji;
     }
     
+    void ubahPangkat(Dosen* d, string pangkatBaru) 
+    {
+        d->pangkat = pangkatBaru; 
+        cout << "Pangkat Dosen " << d->nama << " telah diubah menjadi " << pangkatBaru << endl;
+    }
+
     
 
+    
+    
