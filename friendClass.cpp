@@ -39,7 +39,7 @@ public:
 class Universitas
 {
 public:
-    void lihatGajiDosen(Dosen *d)
+    void lihatGajiDosen(Dosen *d);
     {
         cout << "Gaji Dosen " << d->nama << ": " << d->gaji << endl;
     }
