@@ -116,3 +116,11 @@ public:
             lihatGajiStaff(s);
         }
     };
+
+    int main() 
+    {
+    Mahasiswa mhs("Budi Santoso", "12345");
+    Dosen dsn("Dr. Ahmad", "D001", "Lektor", 8000000);
+    Staff stf("Siti", "S001", 5000000);
+    Universitas univ("Universitas XYZ");
+    
