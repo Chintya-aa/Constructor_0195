@@ -124,3 +124,9 @@ public:
     Staff stf("Siti", "S001", 5000000);
     Universitas univ("Universitas XYZ");
     
+    cout << "=== Data Awal ===" << endl;
+    mhs.tampilInfo();
+    dsn.tampilInfo();
+    stf.tampilInfo();
+    
+}
