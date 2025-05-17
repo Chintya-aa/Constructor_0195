@@ -26,4 +26,20 @@ public:
     friend class Dosen;
 };
 
+class Dosen {
+private:
+    string nama;
+    string NIDN;
+    string pangkat;
+    float gaji;
+    
+public:
+    Dosen(string nama, string NIDN, string pangkat, float gaji) 
+    {
+        this->nama = nama;
+        this->NIDN = NIDN;
+        this->pangkat = pangkat;
+        this->gaji = gaji;
+    }
+};
 
