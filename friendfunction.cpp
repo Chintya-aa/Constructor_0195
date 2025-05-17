@@ -98,27 +98,24 @@ public:
         cout << "Gaji Staff " << s->nama << ": Rp " << s->gaji << endl;
     }
 
-    class Universitas
-    {
-    private:
-        string nama;
+    class Universitas {
+private:
+    string nama;
+    
+public:
+    Universitas(string nama) {
+        this->nama = nama;
+    }
+    
+    void tampilkanGaji(Dosen* d, Staff* s) {
+        cout << "=== Informasi Gaji di " << nama << " ===" << endl;
+        lihatGajiDosen(d);
+        lihatGajiStaff(s);
+    }
+};
 
-    public:
-        Universitas(string nama)
-        {
-            this->nama = nama;
-        }
-
-        void tampilkanGaji(Dosen *d, Staff *s)
-        {
-            cout << "=== Informasi Gaji di " << nama << " ===" << endl;
-            lihatGajiDosen(d);
-            lihatGajiStaff(s);
-        }
-    };
-
-    int main() 
-    {
+int main()
+ {
     Mahasiswa mhs("Budi Santoso", "12345");
     Dosen dsn("Dr. Ahmad", "D001", "Lektor", 8000000);
     Staff stf("Siti", "S001", 5000000);
