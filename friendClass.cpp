@@ -54,3 +54,15 @@ void ubahPangkat(Dosen *d, string pangkatBaru)
 {
     d->pangkat = pangkatBaru;
 }
+
+int main() 
+{
+    Dosen dosen("Dr. Ali", "123456", "Lektor", 5000000);
+    Mahasiswa mahasiswa("Budi", "A123");
+    beriNilai(mahasiswa, 85.0);
+    mahasiswa.tampilkanNilai();
+    ubahPangkat(&dosen, "Profesor");
+    Universitas univ;
+    univ.lihatGajiDosen(&dosen);
+    return 0;
+}
