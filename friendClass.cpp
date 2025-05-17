@@ -3,13 +3,14 @@
 
 using namespace std;
 
-class Mahasiswa; // Kedekatan dengan class Dosen
+class Mahasiswa;
 
-class Mahasiswa {
+class Mahasiswa 
+{
 private:
     string nama;
     string NIM;
-    float nilai; // Attribut bersifat privat
+    float nilai;
 
 public:
     Mahasiswa(string n, string nim) : nama(n), NIM(nim), nilai(0) {}
