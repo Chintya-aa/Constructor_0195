@@ -129,4 +129,16 @@ public:
     dsn.tampilInfo();
     stf.tampilInfo();
     
+    cout << "\n=== Setelah Dosen Memberi Nilai ===" << endl;
+    dsn.beriNilai(&mhs, 85.5);
+    mhs.tampilInfo();
+    
+    cout << "\n=== Setelah Staff Mengubah Pangkat Dosen ===" << endl;
+    stf.ubahPangkat(&dsn, "Profesor");
+    dsn.tampilInfo();
+    
+    cout << "\n=== Akses Gaji Melalui Friend Function ===" << endl;
+    univ.tampilkanGaji(&dsn, &stf);
+    
+    return 0;
 }
